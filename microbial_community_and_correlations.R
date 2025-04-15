@@ -2,8 +2,10 @@
 ### Final Version: 14 April 2025
 
 #set working directory
-setwd("/mnt/md0/bsf_protein_study/assemblies/txomes/kraken_silva_138/") #just silva database
+wd <- "/mnt/md0/bsf_protein_study/github_repo/BSF_Nutrition_Analysis"
+setwd(wd) 
 
+#libraries
 library(phyloseq)
 library(vegan)
 library(RColorBrewer)
@@ -19,13 +21,13 @@ library(data.table)
 library(clusterProfiler)
 
 ### necessary files to reproduce analysis ###
-kb <- "kraken_biom_genus.json" #kraken biom file - this is generated from the output of kracken2/bracken
-genes <- "/mnt/md0/bsf_protein_study/host/normalized_counts.csv" # Full set of normalized counts from BSF
-deg <- "/mnt/md0/bsf_protein_study/no_gainesville/DE_genes.txt" #List of differentially expressed BSF Genes
-mgc <- read.csv("/mnt/md0/bsf_protein_study/no_gainesville/microbial_normalized_cts.csv") # Full set of normalized counts from microbes
-mde <- read.csv("/mnt/md0/bsf_protein_study/no_gainesville/microbe_DE.csv") #List of differentially expressed microbial Genes
-bsf_degann <- "/mnt/md0/bsf_protein_study/no_gainesville/correlation_DEG/BSF_gene_annotations.tsv" #annotations of BSF DEGs from NCBI
-mic_degann <- "/mnt/md0/bsf_protein_study/no_gainesville/correlation_DEG/microbial_annotations.tsv" #annotations of Microbial sig correlated DEGs from eggnog
+kb <- "community_files/kraken_biom_genus.json" #kraken biom file - this is generated from the output of kracken2/bracken
+genes <- "community_files/normalized_counts.csv" # Full set of normalized counts from BSF
+deg <- "community_files/DE_genes.txt" #List of differentially expressed BSF Genes
+mcts <- "community_files/microbial_normalized_cts.csv" # Full set of normalized counts from microbes
+mdegs <- "community_files/microbe_DE.csv" #List of differentially expressed microbial Genes
+bsf_degann <- "community_files/BSF_gene_annotations.tsv" #annotations of BSF DEGs from NCBI
+mic_degann <- "community_files/microbial_annotations.tsv" #annotations of Microbial sig correlated DEGs from eggnog
 
 #import biom file from kraken-biom
 data <-import_biom(kb, parseFunction=parse_taxonomy_default)
@@ -284,21 +286,21 @@ pct_control
 
 #make full figure
 diversity_fig <- alpha_div_l+ alpha_div_f + pcoa_larvae + pcoa_frass + pct_larvae + pct_frass + patchwork::plot_layout(nrow = 3, ncol = 2, guides = "keep") + patchwork::plot_annotation(tag_levels = "A")
-
+diversity_fig
 
 #OUTPUT PLOT
-width = 10
-height = (9/16) * width
-svg(filename = "/mnt/md0/bsf_protein_study/microbiome_figures/diversity_figure.svg", width = 9, height = 9.5)
-diversity_fig
-dev.off()
+# width = 10
+# height = (9/16) * width
+# svg(filename = "/mnt/md0/bsf_protein_study/microbiome_figures/diversity_figure.svg", width = 9, height = 9.5)
+# diversity_fig
+# dev.off()
 
 
 #Output control plot
-png("/mnt/md0/bsf_protein_study/microbiome_figures/control_community.png", width = 7, height = 5, units = "in", res = 300 )
+# png("/mnt/md0/bsf_protein_study/microbiome_figures/control_community.png", width = 7, height = 5, units = "in", res = 300 )
+# pct_control
+# dev.off()
 pct_control
-dev.off()
-
 
 ########## BETA DIVERSITY STATISTICAL ANALYSIS #########
 #vegan analysis
@@ -372,6 +374,8 @@ knitr::kable(head(correlation.table))
 
 
 ########### CORRELATE MICROBIAL DEGS TO BSF DEGS ############
+mgc <- read.csv(mcts)
+mde <- read.csv(mdegs)
 
 #get only differentiall expressed genes
 colnames(mgc)[1] <- "gene"
