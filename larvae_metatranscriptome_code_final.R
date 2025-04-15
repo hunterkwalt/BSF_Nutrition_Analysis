@@ -1,6 +1,11 @@
 ### Written by Hunter K. Walt 
 ### Final Version: 14 April 2025
 
+#set your working directory THIS SHOULD BE CHANGED TO WORK WITH YOUR SYSTEM
+wd <- "/mnt/md0/bsf_protein_study/github_repo/BSF_Nutrition_Analysis"
+setwd(wd)
+
+#Libraries
 library(tximportData)
 library(tximport)
 library(DESeq2)
@@ -23,13 +28,13 @@ library(RCurl)
 library(topGO)
 
 #This script takes a few files as input. Please change these to where the files exist in your directory.
-samps<-"/mnt/md0/bsf_protein_study/assemblies/txomes/individ_cdhit/cdhit_quantified/abundance/larvae_samps_no_gainesville.txt" #sample names
-abun <- "/mnt/md0/bsf_protein_study/assemblies/txomes/larvae_txome/cdhit_90/final_quants/abundance" #directory with Kallisto abundance
-egnog <- "/mnt/md0/bsf_protein_study/assemblies/txomes/larvae_txome/cdhit_90/annotation/best_hit_annotations_final.tsv" #Emapper annotations
-gtog <-"/mnt/md0/bsf_protein_study/assemblies/txomes/larvae_txome/cdhit_90/annotation/gene2go.tsv" # gene ID to go term
-g1_anns <- "/mnt/md0/bsf_protein_study/microbiome_figures/tables/annotations/group_1_larvae_annotations.tsv" #file with manually curated functional terms for cluster 1 genes
-g2_anns <- "/mnt/md0/bsf_protein_study/microbiome_figures/tables/annotations/group_2_larvae_annotations.tsv" #file with manually curated functional terms for cluster 2 genes
-g3_anns <- "/mnt/md0/bsf_protein_study/microbiome_figures/tables/annotations/group_3_larvae_annotations.tsv" #file with manually curated functional terms for cluster 3 genes
+samps<-"metatranscriptome_files/larvae_samps_no_gainesville.txt" #sample names
+abun <- "metatranscriptome_files/abundance" #directory with Kallisto abundance
+egnog <- "metatranscriptome_files/best_hit_annotations_final.tsv" #Emapper annotations
+gtog <-"metatranscriptome_files/gene2go.tsv" # gene ID to go term
+g1_anns <- "metatranscriptome_files/group_1_larvae_annotations.tsv" #file with manually curated functional terms for cluster 1 genes
+g2_anns <- "metatranscriptome_files/group_2_larvae_annotations.tsv" #file with manually curated functional terms for cluster 2 genes
+g3_anns <- "metatranscriptome_files/group_3_larvae_annotations.tsv" #file with manually curated functional terms for cluster 3 genes
 
 #make sample files 
 l_samples= read.table(samps, header = F)
@@ -209,7 +214,7 @@ g1 <- subset(cluster_groups_larvae, cluster == 1)
 g2 <- subset(cluster_groups_larvae, cluster == 2)
 g3<- subset(cluster_groups_larvae, cluster == 3)
 #g4 <- subset(cluster_groups, cluster == 4)
-write.csv(cluster_groups_larvae, file = "/mnt/md0/bsf_protein_study/no_gainesville/microbe_DE.csv", row.names = TRUE)
+#write.csv(cluster_groups_larvae, file = "/mnt/md0/bsf_protein_study/no_gainesville/microbe_DE.csv", row.names = TRUE)
 
 #make factor levels correct
 #clusters_larvae[["normalized"]]$Diet <- factor(clusters_larvae[["normalized"]]$Diet, levels = c("1P:5C", "1P:1C", "5P:1C"))
