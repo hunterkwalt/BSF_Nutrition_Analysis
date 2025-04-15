@@ -1,0 +1,23 @@
+Transcript	Tax_Annotation	Max_Annotation	Description	PFAM	KO_All	KO_sig	Pathway_all	Pathway_sig	GO_BP	GO_sig	Figure_term		
+hpl4_a_DN108_c0_g1_i13	2DSV3@1|root,33HII@2|Bacteria,1VQ64@1239|Firmicutes,4IGTW@91061|Bacilli,3F8RY@33958|Lactobacillaceae	91061|Bacilli	ORF located using Blastx	-	-		-		-				
+hpl7_a_DN2950_c0_g1_i11	2DPM9@1|root,332MQ@2|Bacteria,1VGFB@1239|Firmicutes	1239|Firmicutes	-	-	-		-		-				
+hpl7_a_DN37_c0_g1_i13	2CZQV@1|root,2SBAE@2759|Eukaryota	2759|Eukaryota	-	-	-		-		-				
+hpl7_a_DN403_c0_g1_i14	2DTV2@1|root,33MS7@2|Bacteria,1NKAB@1224|Proteobacteria	2|Bacteria	-	-	-		-		-				
+hpl7_a_DN60_c0_g1_i2	2ED6K@1|root,3373A@2|Bacteria,1VI2S@1239|Firmicutes	1239|Firmicutes	the current gene model (or a revised gene model) may contain one or more premature stops and or frameshifts	-	-		-		-				
+hpl7_a_DN7531_c2_g1_i1	KOG1075@1|root,KOG1075@2759|Eukaryota	2759|Eukaryota	Ribonuclease H protein	DUF4283,RVT_1,RVT_3	ko:K07408		ko00140,ko00380,ko00830,ko00980,ko01100,ko04913,ko05204,map00140,map00380,map00830,map00980,map01100,map04913,map05204	Tryptophan metabolism,	-		Protein Metabolism	Tryptophan metabolism	Nucleic Acid Metabolism
+hpl7_b_DN18_c0_g1_i3	2AU0F@1|root,31JKB@2|Bacteria,4NHS6@976|Bacteroidetes,2FPSJ@200643|Bacteroidia,2308M@171551|Porphyromonadaceae	976|Bacteroidetes	COG NOG14600 non supervised orthologous group	-	-		-		-				
+hpl7_c_DN15_c0_g1_i2	2DMNG@1|root,32SP1@2|Bacteria,1VAXC@1239|Firmicutes,24P9Q@186801|Clostridia	186801|Clostridia	COG NOG14552 non supervised orthologous group	-	-		-		-				
+hpl8_a_DN1_c1_g1_i34	2DX7X@1|root,32V2Y@2|Bacteria,1VB4V@1239|Firmicutes,4HKWS@91061|Bacilli,3F76M@33958|Lactobacillaceae	91061|Bacilli	COG NOG38524 non supervised orthologous group	-	-		-		-				
+hpl8_a_DN237_c0_g1_i5	2AHMV@1|root,317ZT@2|Bacteria,1VPFH@1239|Firmicutes	1239|Firmicutes	-	-	-		-		-				
+hpl8_a_DN33_c0_g1_i8	COG5640@1|root,KOG3627@2759|Eukaryota	2759|Eukaryota	serine-type endopeptidase activity	Trypsin	ko:K09628,ko:K09630,ko:K09640		-		-		Protein Metabolism	Trypsin	
+hpl8_a_DN4769_c0_g2_i1	COG0183@1|root,COG0183@2|Bacteria,1MU8C@1224|Proteobacteria,2TS6P@28211|Alphaproteobacteria	28211|Alphaproteobacteria	Belongs to the thiolase family	Thiolase_C,Thiolase_N	ko:K00626	K00626,	ko00071,ko00072,ko00280,ko00310,ko00362,ko00380,ko00620,ko00630,ko00640,ko00650,ko00720,ko00900,ko01100,ko01110,ko01120,ko01130,ko01200,ko01212,ko02020,map00071,map00072,map00280,map00310,map00362,map00380,map00620,map00630,map00640,map00650,map00720,map00900,map01100,map01110,map01120,map01130,map01200,map01212,map02020	Tryptophan metabolism,	-		Protein Metabolism	Tryptophan metabolism	
+hpl8_a_DN82_c0_g1_i17	2DX7X@1|root,32V2Y@2|Bacteria,1VB4V@1239|Firmicutes,4HKWS@91061|Bacilli,3F76M@33958|Lactobacillaceae	91061|Bacilli	COG NOG38524 non supervised orthologous group	-	-		-		-				
+lpl2_c_DN1895_c0_g2_i2	2DPM9@1|root,332MQ@2|Bacteria,1VGFB@1239|Firmicutes	1239|Firmicutes	-	-	-		-		-				
+lpl6_a_DN69_c1_g1_i5	2DNPH@1|root,32YF1@2|Bacteria,1NARM@1224|Proteobacteria	1224|Proteobacteria	-	-	-		-		-				
+lpl6_b_DN4_c0_g1_i28	2E13Y@1|root,2S8GD@2759|Eukaryota,3ACAZ@33154|Opisthokonta,3PFD1@4751|Fungi	4751|Fungi	-	-	-		-		-				
+lpl6_c_DN285_c0_g1_i11	2DRVE@1|root,33D8G@2|Bacteria,1P1ND@1224|Proteobacteria	1224|Proteobacteria	-	-	-		-		-				
+lpl6_c_DN285_c0_g1_i3	2DSV3@1|root,33HII@2|Bacteria,1VQ64@1239|Firmicutes,4IGTW@91061|Bacilli,3F8RY@33958|Lactobacillaceae	91061|Bacilli	ORF located using Blastx	-	-		-		-				
+mpl4_a_DN819_c0_g1_i22	2DMNG@1|root,32SP1@2|Bacteria,1VAXC@1239|Firmicutes,24P9Q@186801|Clostridia	186801|Clostridia	COG NOG14552 non supervised orthologous group	-	-		-		-				
+mpl9_a_DN10147_c0_g1_i2	2F23F@1|root,2T31E@2759|Eukaryota,3AKFV@33154|Opisthokonta	103372.F4X0U1|-	-	-	-		-		-				
+mpl9_b_DN1006_c0_g1_i7	KOG3714@1|root,KOG3714@2759|Eukaryota	2759|Eukaryota	metalloendopeptidase activity	Astacin	-		-		-		Protein Metabolism	Metalloendopeptidase	
+mpl9_c_DN389_c0_g1_i11	2ED08@1|root,336X7@2|Bacteria,1VI3E@1239|Firmicutes	1239|Firmicutes	non supervised orthologous group	-	-		-		-				
