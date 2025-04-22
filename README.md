@@ -5,3 +5,4 @@ Code necessary to reproduce BSF and microbial gene expression analysis, along wi
 
 - The files in **community_files** are necessary to run **microbial_community_and_correlations.R**
 
+- The files in **larvae_transcriptome_files** are associated with the script **DEA_proj11.R**
